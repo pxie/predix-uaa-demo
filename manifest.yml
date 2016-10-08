@@ -1,0 +1,10 @@
+applications:
+- name: pxie-uaa-demo
+  instances: 1
+  memory: 1024M
+  disk_quota: 1024M
+  routes:
+  - route: pxie-uaa-demo.run.aws-usw02-pr.ice.predix.io
+  services:
+  - dew-uaa
+  stack: cflinuxfs2
